@@ -11,12 +11,14 @@ class Solution:
             if s[l].lower() != s[r].lower():
                 return False
 
-
-
             l += 1
             r -= 1
 
         return True
 
     def is_alpha(self, c: str):
-        return ord('a') <= ord(c) <= ord('z') or ord('A') <= ord(c) <= ord('Z') or ord('0') <= ord(c) <= ord('9')
+        return (
+            ord("a") <= ord(c) <= ord("z")
+            or ord("A") <= ord(c) <= ord("Z")
+            or ord("0") <= ord(c) <= ord("9")
+        )
